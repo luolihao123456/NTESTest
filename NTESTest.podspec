@@ -108,7 +108,9 @@ Pod::Spec.new do |spec|
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-
+  spec.vendored_frameworks = ["Classes/TYRZSDK.framework","Classes/OAuth.framework","Classes/EAccountApiSDK.framework","Classes/NTESQuickPass.framework"]
+  spec.libraries = "c++.1"
+  
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
